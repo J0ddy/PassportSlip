@@ -1,0 +1,44 @@
+# Project Markdown Starter Pack
+
+Generated files:
+
+- `.ai/context/README.md`
+- `.ai/context/mempalace.md`
+- `.ai/handoff.md`
+- `.ai/tasks/TASK_TEMPLATE.md`
+- `.claude/rules/security.md`
+- `.codex/skills/bug-investigator/SKILL.md`
+- `.codex/skills/docs-maintainer/SKILL.md`
+- `.codex/skills/memory-recall/SKILL.md`
+- `.codex/skills/pr-review/SKILL.md`
+- `.codex/skills/security-review/SKILL.md`
+- `.github/ISSUE_TEMPLATE/bug_report.md`
+- `.github/ISSUE_TEMPLATE/feature_request.md`
+- `.github/ISSUE_TEMPLATE/security_hardening.md`
+- `.github/PULL_REQUEST_TEMPLATE.md`
+- `.github/copilot-instructions.md`
+- `AGENTS.md`
+- `CHANGELOG.md`
+- `CLAUDE.md`
+- `CODE_OF_CONDUCT.md`
+- `CONTRIBUTING.md`
+- `README.md`
+- `SECURITY.md`
+- `SUPPORT.md`
+- `docs/AI_MEMORY.md`
+- `docs/API.md`
+- `docs/ARCHITECTURE.md`
+- `docs/DATA_MODEL.md`
+- `docs/DEPLOYMENT.md`
+- `docs/DEVELOPMENT.md`
+- `docs/LEGAL_NOTES.md`
+- `docs/MCP.md`
+- `docs/MEMPALACE.md`
+- `docs/OBSERVABILITY.md`
+- `docs/PRIVACY.md`
+- `docs/PROJECT_BRIEF.md`
+- `docs/RUNBOOK.md`
+- `docs/SECURITY_MODEL.md`
+- `docs/TESTING.md`
+- `docs/adr/0000-template.md`
+- `docs/adr/0001-use-markdown-architecture-decision-records.md`
