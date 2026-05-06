@@ -1,6 +1,6 @@
-# {{PROJECT_NAME}}
+# Passport Slip
 
-> {{ONE_SENTENCE_VALUE_PROPOSITION}}
+> A cross-platform mobile app (iOS + Android) that connects directly to a Phomemo thermal printer over Bluetooth and prints styled boarding passes.
 
 ## Overview
 
