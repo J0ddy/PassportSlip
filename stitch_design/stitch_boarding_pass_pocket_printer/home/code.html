@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&amp;family=DM+Mono&amp;family=DM+Sans:wght@400;500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "interactive-bg": "#000000",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#c7c6c6",
+                    "primary": "#000000",
+                    "inverse-primary": "#c6c6c6",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#e8e8e8",
+                    "secondary-fixed": "#e4e2e2",
+                    "fg-secondary": "#454545", /* Increased contrast from #666666 for WCAG AAA */
+                    "outline-variant": "#cfc4c5",
+                    "on-tertiary-fixed": "#1b1b1b",
+                    "tertiary": "#000000",
+                    "inverse-surface": "#303030",
+                    "on-secondary-container": "#626262",
+                    "secondary": "#5e5e5e",
+                    "bg-inverse": "#000000",
+                    "on-primary-container": "#454545", /* Increased contrast */
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#e2e2e2",
+                    "surface-tint": "#5e5e5e",
+                    "on-primary-fixed": "#1b1b1b",
+                    "primary-fixed": "#e2e2e2",
+                    "bg-tertiary": "#F0F0F0",
+                    "interactive-bg-press": "#444444",
+                    "error": "#ba1a1a",
+                    "border-strong": "#000000",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "bg-inverse-subtle": "#111111",
+                    "border-default": "#767676", /* Increased contrast from #E0E0E0 for visibility */
+                    "inverse-on-surface": "#f1f1f1",
+                    "surface-container-low": "#f3f3f3",
+                    "background": "#f9f9f9",
+                    "on-surface": "#1b1b1b",
+                    "on-error-container": "#93000a",
+                    "outline": "#7e7576",
+                    "fg-tertiary": "#595959", /* Increased contrast from #AAAAAA for WCAG AAA */
+                    "surface-container": "#eeeeee",
+                    "fg-primary": "#000000",
+                    "tertiary-fixed-dim": "#c6c6c6",
+                    "fg-inverse": "#FFFFFF",
+                    "secondary-container": "#e1dfdf",
+                    "on-surface-variant": "#4c4546",
+                    "on-background": "#1b1b1b",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "bg-primary": "#FFFFFF",
+                    "interactive-bg-hover": "#222222",
+                    "on-primary-fixed-variant": "#474747",
+                    "surface-variant": "#e2e2e2",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "tertiary-container": "#1b1b1b",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-container": "#595959", /* Increased contrast */
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface": "#f9f9f9",
+                    "surface-dim": "#dadada",
+                    "fg-disabled": "#767676", /* Increased contrast */
+                    "bg-secondary": "#F8F8F8",
+                    "tertiary-fixed": "#e2e2e2",
+                    "surface-bright": "#f9f9f9",
+                    "primary-container": "#1b1b1b",
+                    "border-subtle": "#E0E0E0",
+                    "on-secondary-fixed-variant": "#464747"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0rem", /* More Swiss-style sharp corners */
+                    "lg": "0.125rem",
+                    "xl": "0.25rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "space-3": "12px",
+                    "space-6": "32px",
+                    "space-1": "4px",
+                    "space-2": "8px",
+                    "base": "8px",
+                    "space-8": "64px",
+                    "space-4": "16px",
+                    "container-margin": "32px",
+                    "gutter": "24px",
+                    "space-7": "48px",
+                    "space-5": "24px"
+            },
+            "fontFamily": {
+                    "body-base": ["Manrope", "sans-serif"],
+                    "code": ["DM Mono", "monospace"],
+                    "wordmark": ["DM Sans", "sans-serif"],
+                    "label-caps": ["Manrope", "sans-serif"],
+                    "h3": ["Manrope", "sans-serif"],
+                    "h1": ["Manrope", "sans-serif"],
+                    "lead": ["Manrope", "sans-serif"],
+                    "h2": ["Manrope", "sans-serif"]
+            },
+            "fontSize": {
+                    "body-base": ["1.0625rem", {"lineHeight": "1.6", "fontWeight": "400"}], /* Slightly larger for legibility */
+                    "code": ["0.9rem", {"lineHeight": "1.7", "fontWeight": "500"}], /* Increased weight for AAA contrast */
+                    "wordmark": ["1.5rem", {"lineHeight": "1.1", "letterSpacing": "0.15em", "fontWeight": "700"}], /* Swiss-style branding */
+                    "label-caps": ["0.875rem", {"lineHeight": "1.5", "letterSpacing": "0.08em", "fontWeight": "600"}], /* Increased weight and size */
+                    "h3": ["2.441rem", {"lineHeight": "1.3", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+                    "h1": ["3.815rem", {"lineHeight": "1.15", "letterSpacing": "-0.03em", "fontWeight": "700"}],
+                    "lead": ["1.375rem", {"lineHeight": "1.7", "fontWeight": "400"}], /* Increased size and weight */
+                    "h2": ["3.052rem", {"lineHeight": "1.15", "letterSpacing": "-0.015em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #FFFFFF;
+            color: #000000;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .swiss-tracking {
+            letter-spacing: 0.2em;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="font-body-base bg-bg-primary text-fg-primary min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="flex justify-between items-center w-full px-space-4 h-16 border-b border-border-strong bg-bg-primary dark:bg-bg-inverse fixed top-0 z-50">
+<div class="flex items-center gap-space-2">
+<span class="material-symbols-outlined text-fg-primary dark:text-fg-inverse">menu</span>
+</div>
+<h1 class="font-wordmark text-wordmark text-fg-primary dark:text-fg-inverse uppercase swiss-tracking">PASS PRINTER</h1>
+<div class="flex items-center gap-space-2">
+<span class="material-symbols-outlined text-fg-primary dark:text-fg-inverse">print_connect</span>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-24 pb-24 px-space-6 max-w-2xl mx-auto w-full">
+<!-- Status Section -->
+<section class="flex justify-center mb-space-8">
+<div class="inline-flex items-center px-space-4 py-1.5 border border-border-strong rounded-full bg-bg-secondary">
+<span class="w-2.5 h-2.5 rounded-full bg-green-700 mr-2.5"></span>
+<span class="font-code text-code text-fg-primary">Printer: Connected (T02)</span>
+</div>
+</section>
+<!-- Primary Hero / CTA Section -->
+<section class="mb-space-8">
+<div class="aspect-[4/5] md:aspect-video w-full bg-bg-primary border-2 border-border-strong flex flex-col items-center justify-center p-space-6 text-center group cursor-pointer transition-colors duration-200 hover:bg-bg-secondary">
+<div class="mb-space-4">
+<span class="material-symbols-outlined text-[64px] text-fg-primary" data-icon="barcode_scanner">barcode_scanner</span>
+</div>
+<h2 class="font-h2 text-h3 md:text-h2 mb-space-2">Scan Boarding Pass</h2>
+<p class="font-body-base text-fg-secondary max-w-xs mx-auto">Position your device's camera over the barcode to instantly generate a thermal print.</p>
+<button class="mt-space-6 bg-interactive-bg text-fg-inverse px-space-8 py-space-4 font-label-caps uppercase tracking-widest transition-transform duration-150 active:scale-95 flex items-center gap-space-2">
+                    Start Scan
+                    <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Recent Passes Section -->
+<section class="mb-space-8">
+<div class="flex justify-between items-end mb-space-4">
+<h3 class="font-label-caps text-label-caps uppercase text-fg-primary">Recent Activity</h3>
+<span class="font-code text-[0.8rem] text-fg-secondary font-bold uppercase">Latest 3 Prints</span>
+</div>
+<div class="space-y-0 divide-y divide-border-strong border-t border-b border-border-strong">
+<!-- List Item 1 -->
+<div class="py-space-5 flex justify-between items-center group cursor-pointer hover:bg-bg-secondary transition-colors duration-150">
+<div class="flex flex-col">
+<span class="font-h3 text-[1.25rem] font-bold text-fg-primary">Lufthansa • LH401</span>
+<span class="font-code text-code text-fg-secondary uppercase mt-1">NYC ➔ FRA • 24 OCT 2023</span>
+</div>
+<span class="material-symbols-outlined text-fg-primary group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- List Item 2 -->
+<div class="py-space-5 flex justify-between items-center group cursor-pointer hover:bg-bg-secondary transition-colors duration-150">
+<div class="flex flex-col">
+<span class="font-h3 text-[1.25rem] font-bold text-fg-primary">Delta Air Lines • DL12</span>
+<span class="font-code text-code text-fg-secondary uppercase mt-1">LAX ➔ JFK • 21 OCT 2023</span>
+</div>
+<span class="material-symbols-outlined text-fg-primary group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- List Item 3 -->
+<div class="py-space-5 flex justify-between items-center group cursor-pointer hover:bg-bg-secondary transition-colors duration-150">
+<div class="flex flex-col">
+<span class="font-h3 text-[1.25rem] font-bold text-fg-primary">British Airways • BA178</span>
+<span class="font-code text-code text-fg-secondary uppercase mt-1">JFK ➔ LHR • 18 OCT 2023</span>
+</div>
+<span class="material-symbols-outlined text-fg-primary group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Decorative Image Section -->
+<section class="mb-space-8">
+<div class="w-full h-48 overflow-hidden grayscale border border-border-strong">
+<img alt="Minimalist Architecture" class="w-full h-full object-cover" data-alt="A starkly minimalist black and white photograph of an airport terminal ceiling with repetitive geometric light fixtures. The image features high-contrast lighting creating deep shadows and brilliant white highlights. The composition is strictly architectural and abstract, emphasizing structural rigor and clean lines. This visual echoes the brand's aesthetic of precision and monochromatic elegance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCow-qf2ppUoH5BTFWEryBx2CZ2bcXhZa1reiY-WZfV18NW6x_Zf1qra5bZDpT3_1O0slQ70HFGLWwEfPtKlkuCVGWwREhHAFdcZHLEIKcr5fEEJWvALZ19FtxsboliD84cknMqFoxOq-IkaQY32rAoZuK65aoaA65-kJMUUHYE70UeTInZwVoQJyLh5rRTOrZJiNQQ4ipzsxxCQaQRcn68SFn2kHAyXWM1cD6blfw7fYm6XmUq-gX4zFyjuK7C2DiZvNAmnxLIyQ"/>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 pb-safe px-space-6 bg-bg-primary dark:bg-bg-inverse border-t border-border-strong">
+<!-- Home Active -->
+<a class="flex flex-col items-center justify-center text-fg-primary dark:text-fg-inverse font-bold border-t-4 border-border-strong pt-1 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-caps text-[0.7rem] uppercase tracking-widest mt-1">Home</span>
+</a>
+<!-- Capture -->
+<a class="flex flex-col items-center justify-center text-fg-tertiary dark:text-fg-secondary pt-1 transition-transform duration-150 hover:text-fg-primary" href="#">
+<span class="material-symbols-outlined" data-icon="barcode_scanner">barcode_scanner</span>
+<span class="font-label-caps text-[0.7rem] uppercase tracking-widest mt-1">Capture</span>
+</a>
+<!-- Archive -->
+<a class="flex flex-col items-center justify-center text-fg-tertiary dark:text-fg-secondary pt-1 transition-transform duration-150 hover:text-fg-primary" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-label-caps text-[0.7rem] uppercase tracking-widest mt-1">Archive</span>
+</a>
+</nav>
+</body></html>

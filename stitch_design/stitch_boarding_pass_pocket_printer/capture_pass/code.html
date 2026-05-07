@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&amp;family=DM+Sans:wght@400;500;700&amp;family=DM+Mono&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "interactive-bg": "#000000",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#c7c6c6",
+                    "primary": "#000000",
+                    "inverse-primary": "#c6c6c6",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#e8e8e8",
+                    "secondary-fixed": "#e4e2e2",
+                    "fg-secondary": "#444444", // Improved for AAA (from #666666)
+                    "outline-variant": "#cfc4c5",
+                    "on-tertiary-fixed": "#1b1b1b",
+                    "tertiary": "#000000",
+                    "inverse-surface": "#303030",
+                    "on-secondary-container": "#626262",
+                    "secondary": "#5e5e5e",
+                    "bg-inverse": "#000000",
+                    "on-primary-container": "#848484",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#e2e2e2",
+                    "surface-tint": "#5e5e5e",
+                    "on-primary-fixed": "#1b1b1b",
+                    "primary-fixed": "#e2e2e2",
+                    "bg-tertiary": "#F0F0F0",
+                    "interactive-bg-press": "#444444",
+                    "error": "#ba1a1a",
+                    "border-strong": "#000000",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "bg-inverse-subtle": "#111111",
+                    "border-default": "#767676", // Darker border for higher contrast
+                    "inverse-on-surface": "#f1f1f1",
+                    "surface-container-low": "#f3f3f3",
+                    "background": "#ffffff", // Pure white for max contrast
+                    "on-surface": "#000000", // Pure black for max contrast
+                    "on-error-container": "#93000a",
+                    "outline": "#7e7576",
+                    "fg-tertiary": "#555555", // Improved for AAA (from #AAAAAA)
+                    "surface-container": "#eeeeee",
+                    "fg-primary": "#000000",
+                    "tertiary-fixed-dim": "#c6c6c6",
+                    "fg-inverse": "#FFFFFF",
+                    "secondary-container": "#e1dfdf",
+                    "on-surface-variant": "#4c4546",
+                    "on-background": "#000000",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "bg-primary": "#FFFFFF",
+                    "interactive-bg-hover": "#222222",
+                    "on-primary-fixed-variant": "#474747",
+                    "surface-variant": "#e2e2e2",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "tertiary-container": "#1b1b1b",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-container": "#848484",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface": "#f9f9f9",
+                    "surface-dim": "#dadada",
+                    "fg-disabled": "#767676",
+                    "bg-secondary": "#F3F3F3",
+                    "tertiary-fixed": "#e2e2e2",
+                    "surface-bright": "#f9f9f9",
+                    "primary-container": "#1b1b1b",
+                    "border-subtle": "#E0E0E0",
+                    "on-secondary-fixed-variant": "#464747"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0rem", // Sharper Swiss look
+                    "lg": "0.125rem",
+                    "xl": "0.25rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "space-3": "12px",
+                    "space-6": "32px",
+                    "space-1": "4px",
+                    "space-2": "8px",
+                    "base": "8px",
+                    "space-8": "64px",
+                    "space-4": "16px",
+                    "container-margin": "32px",
+                    "gutter": "24px",
+                    "space-7": "48px",
+                    "space-5": "24px"
+            },
+            "fontFamily": {
+                    "body-base": ["manrope"],
+                    "code": ["DM Mono"],
+                    "wordmark": ["DM Sans"],
+                    "label-caps": ["DM Sans"],
+                    "h3": ["DM Sans"],
+                    "h1": ["DM Sans"],
+                    "lead": ["manrope"],
+                    "h2": ["DM Sans"]
+            },
+            "fontSize": {
+                    "body-base": ["1.125rem", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "code": ["1rem", {"lineHeight": "1.7", "fontWeight": "400"}],
+                    "wordmark": ["2rem", {"lineHeight": "1", "fontWeight": "700", "letterSpacing": "-0.05em"}],
+                    "label-caps": ["0.9rem", {"lineHeight": "1.5", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "h3": ["2.75rem", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "h1": ["4.5rem", {"lineHeight": "1.1", "letterSpacing": "-0.05em", "fontWeight": "700"}],
+                    "lead": ["1.375rem", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "h2": ["3.5rem", {"lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .swiss-grid {
+            background-image: linear-gradient(#D0D0D0 1.5px, transparent 1.5px), linear-gradient(90deg, #D0D0D0 1.5px, transparent 1.5px);
+            background-size: 32px 32px;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-fg-primary font-body-base antialiased">
+<!-- TopAppBar -->
+<header class="bg-bg-primary dark:bg-bg-inverse text-fg-primary dark:text-fg-inverse docked full-width top-0 border-b-2 border-border-strong fixed z-50 flex justify-between items-center w-full px-space-4 h-20">
+<div class="flex items-center gap-space-4">
+<button class="hover:bg-bg-secondary dark:hover:bg-bg-inverse-subtle p-2 transition-colors duration-200 ease-in-out">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+<h1 class="font-wordmark text-wordmark uppercase">PASS PRINTER</h1>
+</div>
+<button class="hover:bg-bg-secondary dark:hover:bg-bg-inverse-subtle p-2 transition-colors duration-200 ease-in-out">
+<span class="material-symbols-outlined text-3xl">print_connect</span>
+</button>
+</header>
+<main class="pt-32 pb-32 px-space-4 max-w-4xl mx-auto min-h-screen swiss-grid">
+<!-- Hero Title Section -->
+<div class="mb-space-8">
+<span class="font-label-caps text-label-caps uppercase text-fg-primary mb-space-2 block">Initialization</span>
+<h2 class="font-h1 text-h1 text-fg-primary uppercase mb-space-4">CAPTURE</h2>
+<div class="h-2 w-32 bg-border-strong"></div>
+</div>
+<!-- Bento Grid for Options -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Primary Option: Live Scan -->
+<div class="md:col-span-12 group relative overflow-hidden bg-interactive-bg text-fg-inverse p-space-6 flex flex-col justify-between min-h-[380px] shadow-lg">
+<div class="absolute top-0 right-0 p-space-6">
+<span class="material-symbols-outlined text-[140px] opacity-20" style="font-variation-settings: 'FILL' 1;">barcode_scanner</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-fg-inverse/80">Primary Protocol</span>
+<h3 class="font-h2 text-h2 uppercase mt-space-2 leading-none">Live Scan</h3>
+</div>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-6">
+<p class="font-lead text-lead max-w-lg">Point at a PDF417 or QR code for instantaneous data extraction and rendering.</p>
+<button class="bg-bg-primary text-fg-primary px-space-8 py-space-4 font-label-caps text-label-caps uppercase text-lg hover:bg-bg-secondary transition-colors ring-2 ring-inset ring-border-strong">
+<span class="material-symbols-outlined align-middle mr-2" style="font-variation-settings: 'FILL' 1;">photo_camera</span>
+                        Initialize Camera
+                    </button>
+</div>
+</div>
+<!-- Secondary Option: Upload Image -->
+<div class="md:col-span-7 bg-bg-primary border-4 border-border-strong p-space-6 flex flex-col justify-between min-h-[320px]">
+<div class="flex justify-between items-start">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-fg-tertiary">Import Asset</span>
+<h3 class="font-h3 text-h3 uppercase mt-space-1 leading-none">Upload Image</h3>
+</div>
+<span class="material-symbols-outlined text-fg-primary text-5xl">gallery_thumbnail</span>
+</div>
+<div>
+<p class="font-body-base text-body-base text-fg-primary mb-space-6 font-medium">Pick from camera roll to process saved boarding passes or tickets.</p>
+<div class="flex items-center gap-space-4 text-fg-primary font-bold border-t-2 border-border-strong pt-space-4 group cursor-pointer">
+<span class="font-label-caps text-label-caps uppercase text-lg">Select From Storage</span>
+<span class="material-symbols-outlined text-3xl group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Tertiary Option: Manual Entry -->
+<div class="md:col-span-5 bg-bg-secondary border-2 border-border-strong p-space-6 flex flex-col justify-between min-h-[320px]">
+<div class="flex justify-between items-start">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-fg-tertiary">Failover Mode</span>
+<h3 class="font-h3 text-h3 uppercase mt-space-1 leading-none">Manual Entry</h3>
+</div>
+<span class="material-symbols-outlined text-fg-primary text-5xl">keyboard</span>
+</div>
+<div>
+<p class="font-body-base text-body-base text-fg-primary mb-space-6 font-medium">Enter flight details by hand if visual scanning is unavailable.</p>
+<button class="w-full bg-interactive-bg text-fg-inverse py-space-4 font-label-caps text-label-caps uppercase text-lg hover:bg-interactive-bg-hover transition-all">
+                        Open Terminal
+                    </button>
+</div>
+</div>
+<!-- Visual Context Section -->
+<div class="md:col-span-12 mt-space-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center border-t-4 border-border-strong pt-space-8">
+<div class="relative aspect-video bg-black overflow-hidden border-2 border-border-strong">
+<img class="w-full h-full object-cover grayscale opacity-90" data-alt="A high-contrast, minimalist photograph of an airplane wing slicing through a thick layer of white clouds." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD11OqMc9xnJAnNs8bqKp0YTAQKNivym1w27679wr3S7zJ8G81ANaWpYsCi4qcrVyqeM_2HMr6oXlf7TRGop2o0n7OSMfGodvgURpHcRi12AbHzUKh1i-hI1zyw-_GFGV2EZ8XdrqyUdijqbi2DAvLHBhUFrRgRnmlPhCZf69qzxI1CPqd1GR6LfD8HtyMwnrxllGWhlXlEhImCWHIjM11Y_wqKrxqk67Fu5XkZMkenwmym74zMkGybP5Nbi42RENl46uTzcN5M2Eo"/>
+</div>
+<div class="p-space-4 md:pl-space-8 border-l-4 border-border-strong h-full flex flex-col justify-center">
+<h4 class="font-h3 text-h3 uppercase mb-space-4 leading-none">Precision Decoding</h4>
+<p class="font-body-base text-body-base text-fg-primary font-medium">Our scanning engine utilizes sub-pixel analysis to ensure 99.9% accuracy on all international aviation standards including IATA BCBP formats.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="bg-bg-primary dark:bg-bg-inverse text-fg-primary dark:text-fg-inverse border-t-4 border-border-strong fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-24 pb-safe px-space-6">
+<!-- Home -->
+<a class="flex flex-col items-center justify-center text-fg-tertiary hover:text-fg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-3xl mb-1">home</span>
+<span class="font-label-caps text-label-caps uppercase">Home</span>
+</a>
+<!-- Capture (Active) -->
+<a class="flex flex-col items-center justify-center text-fg-primary font-bold pt-1" href="#">
+<span class="material-symbols-outlined text-4xl mb-1" style="font-variation-settings: 'FILL' 1;">barcode_scanner</span>
+<span class="font-label-caps text-label-caps uppercase text-lg border-b-4 border-border-strong">Capture</span>
+</a>
+<!-- Archive -->
+<a class="flex flex-col items-center justify-center text-fg-tertiary hover:text-fg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-3xl mb-1">history</span>
+<span class="font-label-caps text-label-caps uppercase">Archive</span>
+</a>
+</nav>
+</body></html>
