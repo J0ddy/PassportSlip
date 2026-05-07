@@ -27,7 +27,7 @@ export function Home() {
     }
   };
 
-  const handlePrintMock = async (base64Png: string) => {
+  const handlePrintMock = async (_base64Png: string) => {
     if (!connectedDevice) {
       setPrintingStatus('Error: Printer not connected');
       return;
