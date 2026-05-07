@@ -33,7 +33,8 @@ export function Home() {
       return;
     }
 
-    setPrintingStatus(`Dithering image (${base64Png.length} chars)...`);
+    console.debug(`[MOCK PRINT]: received ${base64Png.length} base64 chars`);
+    setPrintingStatus('Dithering image...');
     // In real implementation:
     // 1. Decode base64 to RGBA Uint8Array
     // 2. packed = floydSteinberg(rgba, 384, height)
