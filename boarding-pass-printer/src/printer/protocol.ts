@@ -59,7 +59,7 @@ export function base64Encode(bytes: Uint8Array): string {
   let result = '';
 
   for (let i = 0; i < bytes.length; i += 3) {
-    const a = bytes[i]!;
+    const a = bytes[i] ?? 0;
     const b = bytes[i + 1];
     const c = bytes[i + 2];
 

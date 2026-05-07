@@ -74,8 +74,12 @@ export const useBleStore = create<MockBleStore>((set, get) => ({
   },
 
   disconnect: async (connection: Connection) => {
-    set((state) => ({
-      connectedDevice: state.connectedDevice?.id === connection.device.id ? null : state.connectedDevice
-    }));
+    set((state) => {
+      if (state.connectedDevice && state.connectedDevice.id !== connection.device.id) {
+        console.warn(`[MOCK BLE DISCONNECT]: requested ${connection.device.id} but connected to ${state.connectedDevice.id}`);
+      }
+
+      return { connectedDevice: null };
+    });
   }
 }));
