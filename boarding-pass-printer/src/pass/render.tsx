@@ -18,11 +18,17 @@ export function PassRenderer({ pass, onRenderComplete }: PassRendererProps) {
 
   useEffect(() => {
     // Simulate generation of Skia surface to base64 PNG
-    if (onRenderComplete) {
-      setTimeout(() => {
-        onRenderComplete("mock_base64_png_data");
-      }, 500);
+    if (!onRenderComplete) {
+      return;
     }
+
+    const timeoutId = setTimeout(() => {
+      onRenderComplete("mock_base64_png_data");
+    }, 500);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
   }, [pass, onRenderComplete]);
 
   return (
