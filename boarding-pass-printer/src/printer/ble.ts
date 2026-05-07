@@ -74,7 +74,8 @@ export const useBleStore = create<MockBleStore>((set, get) => ({
   },
 
   disconnect: async (connection: Connection) => {
-    void connection;
-    set({ connectedDevice: null });
+    set((state) => ({
+      connectedDevice: state.connectedDevice?.id === connection.device.id ? null : state.connectedDevice
+    }));
   }
 }));

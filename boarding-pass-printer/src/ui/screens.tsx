@@ -33,8 +33,7 @@ export function Home() {
       return;
     }
 
-    void base64Png;
-    setPrintingStatus('Dithering image...');
+    setPrintingStatus(`Dithering image (${base64Png.length} chars)...`);
     // In real implementation:
     // 1. Decode base64 to RGBA Uint8Array
     // 2. packed = floydSteinberg(rgba, 384, height)
