@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import { BoardingPass } from './types';
 
@@ -18,17 +18,11 @@ export function PassRenderer({ pass, onRenderComplete }: PassRendererProps) {
 
   useEffect(() => {
     // Simulate generation of Skia surface to base64 PNG
-    if (!onRenderComplete) {
-      return;
+    if (onRenderComplete) {
+      setTimeout(() => {
+        onRenderComplete("mock_base64_png_data");
+      }, 500);
     }
-
-    const timeoutId = setTimeout(() => {
-      onRenderComplete("mock_base64_png_data");
-    }, 500);
-
-    return () => {
-      clearTimeout(timeoutId);
-    };
   }, [pass, onRenderComplete]);
 
   return (

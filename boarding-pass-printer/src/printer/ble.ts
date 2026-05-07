@@ -1,3 +1,4 @@
+import { State } from 'react-native-ble-plx';
 import { create } from 'zustand';
 
 // Mock Device to represent Phomemo T02
@@ -74,13 +75,6 @@ export const useBleStore = create<MockBleStore>((set, get) => ({
   },
 
   disconnect: async (connection: Connection) => {
-    set((state) => {
-      if (state.connectedDevice && state.connectedDevice.id !== connection.device.id) {
-        console.warn(`[MOCK BLE DISCONNECT]: requested ${connection.device.id} but connected to ${state.connectedDevice.id}`);
-        return { connectedDevice: state.connectedDevice };
-      }
-
-      return { connectedDevice: null };
-    });
+    set({ connectedDevice: null });
   }
 }));

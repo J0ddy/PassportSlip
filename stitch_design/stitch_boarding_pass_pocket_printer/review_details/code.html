@@ -6,6 +6,7 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&amp;family=Sacramento&amp;family=DM+Mono&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
@@ -151,32 +152,32 @@
 <!-- Form Inputs -->
 <div class="space-y-space-4 col-span-1 md:col-span-2">
 <div class="group border-b border-border-default pb-space-2 transition-colors focus-within:border-border-strong">
-<label class="block font-label-caps text-label-caps uppercase text-fg-tertiary mb-1" for="passenger-name">Passenger Name</label>
-<input class="w-full bg-transparent border-none p-0 font-h3 text-[1.25rem] text-fg-primary focus:ring-0" id="passenger-name" type="text" value="ALEXANDER VANDEROHE"/>
+<label class="block font-label-caps text-label-caps uppercase text-fg-tertiary mb-1">Passenger Name</label>
+<input class="w-full bg-transparent border-none p-0 font-h3 text-[1.25rem] text-fg-primary focus:ring-0" type="text" value="ALEXANDER VANDEROHE"/>
 </div>
 <div class="grid grid-cols-2 gap-space-5">
 <div class="group border-b border-border-default pb-space-2 transition-colors focus-within:border-border-strong">
-<label class="block font-label-caps text-label-caps uppercase text-fg-tertiary mb-1" for="pnr">PNR (booking ref)</label>
-<input class="w-full bg-transparent border-none p-0 font-h3 text-[1.25rem] text-fg-primary focus:ring-0" id="pnr" type="text" value="XP92LW"/>
+<label class="block font-label-caps text-label-caps uppercase text-fg-tertiary mb-1">PNR (booking ref)</label>
+<input class="w-full bg-transparent border-none p-0 font-h3 text-[1.25rem] text-fg-primary focus:ring-0" type="text" value="XP92LW"/>
 </div>
 <div class="group border-b border-border-default pb-space-2 transition-colors focus-within:border-border-strong">
-<label class="block font-label-caps text-label-caps uppercase text-fg-tertiary mb-1" for="flight-number">Flight Number</label>
-<input class="w-full bg-transparent border-none p-0 font-h3 text-[1.25rem] text-fg-primary focus:ring-0" id="flight-number" type="text" value="BA0175"/>
+<label class="block font-label-caps text-label-caps uppercase text-fg-tertiary mb-1">Flight Number</label>
+<input class="w-full bg-transparent border-none p-0 font-h3 text-[1.25rem] text-fg-primary focus:ring-0" type="text" value="BA0175"/>
 </div>
 </div>
 <div class="grid grid-cols-2 gap-space-5">
 <div class="group border-b border-border-default pb-space-2 transition-colors focus-within:border-border-strong">
-<label class="block font-label-caps text-label-caps uppercase text-fg-tertiary mb-1" for="from-iata">From (IATA)</label>
-<input class="w-full bg-transparent border-none p-0 font-h3 text-[1.25rem] text-fg-primary focus:ring-0" id="from-iata" type="text" value="LHR"/>
+<label class="block font-label-caps text-label-caps uppercase text-fg-tertiary mb-1">From (IATA)</label>
+<input class="w-full bg-transparent border-none p-0 font-h3 text-[1.25rem] text-fg-primary focus:ring-0" type="text" value="LHR"/>
 </div>
 <div class="group border-b border-border-default pb-space-2 transition-colors focus-within:border-border-strong">
-<label class="block font-label-caps text-label-caps uppercase text-fg-tertiary mb-1" for="to-iata">To (IATA)</label>
-<input class="w-full bg-transparent border-none p-0 font-h3 text-[1.25rem] text-fg-primary focus:ring-0" id="to-iata" type="text" value="JFK"/>
+<label class="block font-label-caps text-label-caps uppercase text-fg-tertiary mb-1">To (IATA)</label>
+<input class="w-full bg-transparent border-none p-0 font-h3 text-[1.25rem] text-fg-primary focus:ring-0" type="text" value="JFK"/>
 </div>
 </div>
 <div class="group border-b border-border-default pb-space-2 transition-colors focus-within:border-border-strong">
-<label class="block font-label-caps text-label-caps uppercase text-fg-tertiary mb-1" for="departure-date">Departure Date</label>
-<input class="w-full bg-transparent border-none p-0 font-h3 text-[1.25rem] text-fg-primary focus:ring-0" id="departure-date" type="text" value="24 OCT 2024"/>
+<label class="block font-label-caps text-label-caps uppercase text-fg-tertiary mb-1">Departure Date</label>
+<input class="w-full bg-transparent border-none p-0 font-h3 text-[1.25rem] text-fg-primary focus:ring-0" type="text" value="24 OCT 2024"/>
 </div>
 </div>
 <!-- Live Preview Section -->
@@ -185,7 +186,7 @@
 <div class="flex justify-center bg-surface-container p-space-6 rounded-xl border border-border-subtle relative overflow-hidden">
 <!-- Background Prompt Image Layer -->
 <div class="absolute inset-0 opacity-5 mix-blend-overlay">
-<img alt="Thermal printer mechanism in black and white" class="w-full h-full object-cover" data-alt="A macro close-up of a high-tech thermal receipt printer mechanism with sleek black metallic components and subtle industrial lighting. The atmosphere is professional and precise, mirroring a modern aviation or logistics environment. Minimalist black and white tones dominate the frame with sharp focus on the printing edge, creating a sense of reliability and high-speed efficiency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7oDp5bZWk6dnRk7ISDkpDH10fY51GRqtnys82kNFKpzFymQ07cTB1U-JfA0yY9zhyIEuJktYHOdYIb4IsasAmX7--aOoxsFH77NXOSZ8DevolgjiKtNBRv0Wytlotduv_6VSvUKXFrF4UwlB9obvGhGwseJTYUBwxQlb8jx6Ttv6JNoWwYZJjjvRoWZBKnKXY9vlXM4CNS2ymjGjBehTOcS2DK9Rczfn0a_gxNe6bcO1h0eWAisBufaOE5es6YWU5VR1KnM2h7jE"/>
+<img class="w-full h-full object-cover" data-alt="A macro close-up of a high-tech thermal receipt printer mechanism with sleek black metallic components and subtle industrial lighting. The atmosphere is professional and precise, mirroring a modern aviation or logistics environment. Minimalist black and white tones dominate the frame with sharp focus on the printing edge, creating a sense of reliability and high-speed efficiency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7oDp5bZWk6dnRk7ISDkpDH10fY51GRqtnys82kNFKpzFymQ07cTB1U-JfA0yY9zhyIEuJktYHOdYIb4IsasAmX7--aOoxsFH77NXOSZ8DevolgjiKtNBRv0Wytlotduv_6VSvUKXFrF4UwlB9obvGhGwseJTYUBwxQlb8jx6Ttv6JNoWwYZJjjvRoWZBKnKXY9vlXM4CNS2ymjGjBehTOcS2DK9Rczfn0a_gxNe6bcO1h0eWAisBufaOE5es6YWU5VR1KnM2h7jE"/>
 </div>
 <!-- Thermal Pass Snippet -->
 <div class="w-64 bg-white shadow-xl p-space-4 border-l-4 border-black relative overflow-hidden flex flex-col gap-space-2">

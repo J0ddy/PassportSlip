@@ -33,7 +33,6 @@ export function Home() {
       return;
     }
 
-    console.debug(`[MOCK PRINT]: received ${base64Png.length} base64 chars`);
     setPrintingStatus('Dithering image...');
     // In real implementation:
     // 1. Decode base64 to RGBA Uint8Array
