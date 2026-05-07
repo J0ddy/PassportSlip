@@ -55,9 +55,22 @@ export function buildFooterFrame(): Uint8Array {
 }
 
 export function base64Encode(bytes: Uint8Array): string {
-  // In a real environment, we might use a robust Base64 library.
-  // For React Native without Node buffers, we can use a small utility or Buffer.
-  return Buffer.from(bytes).toString('base64');
+  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
+  let result = '';
+
+  for (let i = 0; i < bytes.length; i += 3) {
+    const a = bytes[i]!;
+    const b = bytes[i + 1];
+    const c = bytes[i + 2];
+
+    const n = (a << 16) | ((b ?? 0) << 8) | (c ?? 0);
+    result += alphabet[(n >> 18) & 0x3f];
+    result += alphabet[(n >> 12) & 0x3f];
+    result += b === undefined ? '=' : alphabet[(n >> 6) & 0x3f];
+    result += c === undefined ? '=' : alphabet[n & 0x3f];
+  }
+
+  return result;
 }
 
 export function packPixelsTo1Bit(grayscalePixels: Uint8Array, width: number, height: number): Uint8Array {

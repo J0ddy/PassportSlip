@@ -1,4 +1,3 @@
-import { State } from 'react-native-ble-plx';
 import { create } from 'zustand';
 
 // Mock Device to represent Phomemo T02
@@ -75,6 +74,7 @@ export const useBleStore = create<MockBleStore>((set, get) => ({
   },
 
   disconnect: async (connection: Connection) => {
+    void connection;
     set({ connectedDevice: null });
   }
 }));

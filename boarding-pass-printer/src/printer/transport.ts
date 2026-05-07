@@ -18,7 +18,7 @@ export async function writeFrames(connection: Connection, frames: Uint8Array[], 
 
       bytesWritten += chunk.length;
       if (onProgress) {
-        onProgress(bytesWritten / totalBytes);
+        onProgress((bytesWritten / totalBytes) * 100);
       }
 
       // Small inter-chunk delay to avoid overwhelming the printer
