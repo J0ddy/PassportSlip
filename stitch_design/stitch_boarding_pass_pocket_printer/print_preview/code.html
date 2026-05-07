@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;family=Sacramento&amp;family=DM+Mono&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "interactive-bg": "#000000",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#c7c6c6",
+                    "primary": "#000000",
+                    "inverse-primary": "#c6c6c6",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#e8e8e8",
+                    "secondary-fixed": "#e4e2e2",
+                    "fg-secondary": "#666666",
+                    "outline-variant": "#cfc4c5",
+                    "on-tertiary-fixed": "#1b1b1b",
+                    "tertiary": "#000000",
+                    "inverse-surface": "#303030",
+                    "on-secondary-container": "#626262",
+                    "secondary": "#5e5e5e",
+                    "bg-inverse": "#000000",
+                    "on-primary-container": "#848484",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#e2e2e2",
+                    "surface-tint": "#5e5e5e",
+                    "on-primary-fixed": "#1b1b1b",
+                    "primary-fixed": "#e2e2e2",
+                    "bg-tertiary": "#F0F0F0",
+                    "interactive-bg-press": "#444444",
+                    "error": "#ba1a1a",
+                    "border-strong": "#000000",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "bg-inverse-subtle": "#111111",
+                    "border-default": "#E0E0E0",
+                    "inverse-on-surface": "#f1f1f1",
+                    "surface-container-low": "#f3f3f3",
+                    "background": "#f9f9f9",
+                    "on-surface": "#1b1b1b",
+                    "on-error-container": "#93000a",
+                    "outline": "#7e7576",
+                    "fg-tertiary": "#AAAAAA",
+                    "surface-container": "#eeeeee",
+                    "fg-primary": "#000000",
+                    "tertiary-fixed-dim": "#c6c6c6",
+                    "fg-inverse": "#FFFFFF",
+                    "secondary-container": "#e1dfdf",
+                    "on-surface-variant": "#4c4546",
+                    "on-background": "#1b1b1b",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "bg-primary": "#FFFFFF",
+                    "interactive-bg-hover": "#222222",
+                    "on-primary-fixed-variant": "#474747",
+                    "surface-variant": "#e2e2e2",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "tertiary-container": "#1b1b1b",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-container": "#848484",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface": "#f9f9f9",
+                    "surface-dim": "#dadada",
+                    "fg-disabled": "#CCCCCC",
+                    "bg-secondary": "#F8F8F8",
+                    "tertiary-fixed": "#e2e2e2",
+                    "surface-bright": "#f9f9f9",
+                    "primary-container": "#1b1b1b",
+                    "border-subtle": "#F0F0F0",
+                    "on-secondary-fixed-variant": "#464747"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "space-3": "12px",
+                    "space-6": "32px",
+                    "space-1": "4px",
+                    "space-2": "8px",
+                    "base": "8px",
+                    "space-8": "64px",
+                    "space-4": "16px",
+                    "container-margin": "32px",
+                    "gutter": "24px",
+                    "space-7": "48px",
+                    "space-5": "24px"
+            },
+            "fontFamily": {
+                    "body-base": ["manrope"],
+                    "code": ["DM Mono"],
+                    "wordmark": ["Sacramento"],
+                    "label-caps": ["manrope"],
+                    "h3": ["manrope"],
+                    "h1": ["manrope"],
+                    "lead": ["manrope"],
+                    "h2": ["manrope"]
+            },
+            "fontSize": {
+                    "body-base": ["1rem", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "code": ["0.9rem", {"lineHeight": "1.7", "fontWeight": "400"}],
+                    "wordmark": ["2.441rem", {"lineHeight": "1.15", "fontWeight": "400"}],
+                    "label-caps": ["0.8rem", {"lineHeight": "1.5", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "h3": ["2.441rem", {"lineHeight": "1.3", "letterSpacing": "-0.015em", "fontWeight": "500"}],
+                    "h1": ["3.815rem", {"lineHeight": "1.15", "letterSpacing": "-0.03em", "fontWeight": "600"}],
+                    "lead": ["1.25rem", {"lineHeight": "1.7", "fontWeight": "300"}],
+                    "h2": ["3.052rem", {"lineHeight": "1.15", "letterSpacing": "-0.015em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .barcode-container {
+            image-rendering: pixelated;
+        }
+        .cut-line {
+            background-image: linear-gradient(to right, #000 50%, rgba(255,255,255,0) 0%);
+            background-position: bottom;
+            background-size: 8px 1px;
+            background-repeat: repeat-x;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-fg-primary font-body-base min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-bg-primary border-b border-border-subtle flex justify-between items-center w-full px-space-4 h-16 fixed top-0 z-50">
+<div class="flex items-center gap-space-4">
+<button class="hover:bg-bg-secondary transition-colors duration-200 ease-in-out p-space-2 rounded-lg">
+<span class="material-symbols-outlined text-fg-primary">menu</span>
+</button>
+<h1 class="font-h3 text-[1.5rem] tracking-tight uppercase text-fg-primary">PASS PRINTER</h1>
+</div>
+<div class="flex items-center">
+<button class="hover:bg-bg-secondary transition-colors duration-200 ease-in-out p-space-2 rounded-lg">
+<span class="material-symbols-outlined text-fg-primary">print_connect</span>
+</button>
+</div>
+</header>
+<main class="flex-grow pt-24 pb-32 px-space-4 flex flex-col items-center">
+<!-- Ticket Preview Canvas -->
+<div class="w-full max-w-[384px] shadow-xl bg-bg-primary relative mb-space-8 overflow-hidden rounded-sm border border-border-subtle">
+<!-- Cut Line Top -->
+<div class="absolute top-0 w-full h-px cut-line"></div>
+<div class="absolute top-2 left-1/2 -translate-x-1/2">
+<span class="material-symbols-outlined text-fg-tertiary scale-75">content_cut</span>
+</div>
+<!-- Ticket Content -->
+<div class="px-space-6 pt-space-8 pb-space-8 flex flex-col">
+<!-- Airline Info -->
+<div class="flex justify-between items-start mb-space-6">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-fg-tertiary">Flight</span>
+<span class="font-h3 text-[1.25rem] text-fg-primary">TX-9042</span>
+</div>
+<div class="text-right">
+<span class="font-label-caps text-label-caps uppercase text-fg-tertiary">Terminal</span>
+<span class="font-h3 text-[1.25rem] text-fg-primary">B3</span>
+</div>
+</div>
+<!-- Main Display Font Codes -->
+<div class="flex justify-between items-center mb-space-7 border-y border-border-subtle py-space-6">
+<div class="flex flex-col">
+<span class="font-h1 text-[3rem] font-extrabold tracking-tighter leading-none">SFO</span>
+<span class="font-label-caps text-label-caps text-fg-secondary">SAN FRANCISCO</span>
+</div>
+<span class="material-symbols-outlined text-fg-tertiary text-h2">flight_takeoff</span>
+<div class="flex flex-col text-right">
+<span class="font-h1 text-[3rem] font-extrabold tracking-tighter leading-none">HND</span>
+<span class="font-label-caps text-label-caps text-fg-secondary">TOKYO-HANEDA</span>
+</div>
+</div>
+<!-- Details Grid -->
+<div class="grid grid-cols-2 gap-y-space-5 gap-x-space-4 mb-space-7">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-fg-tertiary">Passenger</span>
+<span class="font-body-base font-bold text-fg-primary">ELARA VANCE</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-caps text-label-caps uppercase text-fg-tertiary">Gate</span>
+<span class="font-body-base font-bold text-fg-primary">54-A</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-fg-tertiary">Seat</span>
+<span class="font-body-base font-bold text-fg-primary">12F (WINDOW)</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-caps text-label-caps uppercase text-fg-tertiary">Boarding</span>
+<span class="font-body-base font-bold text-fg-primary">06:45 AM</span>
+</div>
+</div>
+<!-- Barcode Section -->
+<div class="barcode-container flex flex-col items-center gap-space-3 bg-bg-secondary p-space-4 rounded-sm border border-border-subtle">
+<img alt="Boarding Pass Barcode" class="w-full h-24 object-cover mix-blend-multiply opacity-90" data-alt="A clean, high-resolution PDF417 2D barcode displayed on a crisp white background. The style is technical and utilitarian, following a strict monochromatic black and white aesthetic. The barcode is composed of precise, jagged rectangular blocks arranged in a dense grid, characteristic of modern aviation boarding passes. The lighting is flat and even, highlighting the stark contrast between the black elements and the white paper texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5lPfiWY7uW4Sxk-7BnKEzHfdA1ylCWT_BydiU3H-sVzvdy47U8zDDR6GvJHZnsHMIyuBfuYtHF0D4Gddqp5avsmCaG-1o2nW3lBrWv0qU99J-MKfa254_wWZxW4FcivsCNM19y6tmt68fR78OWSF8LSOHPwpOtUHtnahGfktU-OEbkIjHjLhPjmf5aJodax571X-VRkbCHgYPbLO0q0r4nRTga51XTNc7fzdUUrPn8FCdatvwAf0Y6TRVU2inpr2aLjGRoyIMM-o"/>
+<span class="font-code text-code text-fg-tertiary tracking-[0.2em]">P9042-SFO-HND-EV</span>
+</div>
+</div>
+<!-- Cut Line Bottom -->
+<div class="absolute bottom-2 left-1/2 -translate-x-1/2">
+<span class="material-symbols-outlined text-fg-tertiary scale-75">content_cut</span>
+</div>
+<div class="absolute bottom-0 w-full h-px cut-line"></div>
+</div>
+<!-- Controls Section -->
+<div class="w-full max-w-[384px] flex flex-col gap-space-4">
+<!-- Copies Stepper -->
+<div class="flex items-center justify-between p-space-4 bg-bg-primary border border-border-default rounded-lg">
+<span class="font-body-base font-medium">Copies to Print</span>
+<div class="flex items-center gap-space-4">
+<button class="w-8 h-8 flex items-center justify-center rounded-full bg-bg-tertiary hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[1.2rem]">remove</span>
+</button>
+<span class="font-body-base font-bold text-[1.1rem] w-6 text-center">1</span>
+<button class="w-8 h-8 flex items-center justify-center rounded-full bg-bg-tertiary hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[1.2rem]">add</span>
+</button>
+</div>
+</div>
+<!-- Print Action -->
+<button class="bg-interactive-bg text-fg-inverse font-h3 text-[1.1rem] py-space-4 rounded-xl shadow-md hover:bg-interactive-bg-hover active:scale-[0.98] transition-all flex items-center justify-center gap-space-3">
+<span class="material-symbols-outlined">print</span>
+<span>Print Document</span>
+</button>
+<!-- Cancel Action -->
+<button class="text-fg-secondary font-label-caps text-label-caps uppercase py-space-3 hover:text-fg-primary transition-colors text-center">
+                Cancel Request
+            </button>
+</div>
+<!-- Disclaimer -->
+<footer class="mt-space-8 w-full max-w-[384px] text-center">
+<p class="text-[0.7rem] text-fg-tertiary uppercase tracking-widest leading-relaxed">
+                Backup use only. This is not a primary travel document. Ensure you have your official digital or airline-issued ticket available.
+            </p>
+</footer>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 pb-safe px-space-6 bg-bg-primary border-t border-border-subtle">
+<a class="flex flex-col items-center justify-center text-fg-tertiary pt-1 hover:text-fg-primary transition-transform duration-150 scale-95 active:scale-90" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-fg-primary font-bold border-t-2 border-border-strong pt-1 transition-transform duration-150 scale-95 active:scale-90" href="#">
+<span class="material-symbols-outlined">barcode_scanner</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest mt-1">Capture</span>
+</a>
+<a class="flex flex-col items-center justify-center text-fg-tertiary pt-1 hover:text-fg-primary transition-transform duration-150 scale-95 active:scale-90" href="#">
+<span class="material-symbols-outlined">history</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest mt-1">Archive</span>
+</a>
+</nav>
+</body></html>

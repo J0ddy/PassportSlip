@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "boarding-pass-printer",
+    "slug": "boarding-pass-printer",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": { "infoPlist": { "NSBluetoothAlwaysUsageDescription": "This app uses Bluetooth to connect to and print on the Phomemo T02 printer.", "NSCameraUsageDescription": "This app uses the camera to scan boarding pass barcodes." },
+      "supportsTablet": true
+    },
+    "android": { "permissions": ["BLUETOOTH_SCAN", "BLUETOOTH_CONNECT", "ACCESS_FINE_LOCATION", "CAMERA"],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
